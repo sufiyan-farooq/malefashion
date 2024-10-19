@@ -15,7 +15,7 @@ export default function Contact(){
         referrerPolicy="no-referrer-when-downgrade"
       />
     </div>
-    <form action="https://formspree.io/f/xzbowpjq" method="POST">
+    <form action="https://api.web3forms.com/submit" method="POST">
       <div className="form">
         <div className="form-txt">
           <h4>INFORMATION</h4>
@@ -24,20 +24,18 @@ export default function Contact(){
             As you might expect of a company that began as a high-end interiors
             contractor, we pay strict attention.
           </span>
-          <h3>USA</h3>
+      
+          <h3>Pakistan</h3>
           <p>
-            195 E Parker Square Dr, Parker, CO 801
+            Karachi
             <br />
-            +43 982-314-0958
-          </p>
-          <h3>India</h3>
-          <p>
-            HW95+C9C, Lorem ipsum dolor sit.
-            <br />
-            411014
+            Near Madni Masjid
           </p>
         </div>
+
         <div className="form-details">
+        <input type="hidden" name="access_key" value="fff1762e-1810-4175-b62d-ea810bd67806"/>
+
           <input
             type="text"
             name="name"
@@ -61,7 +59,7 @@ export default function Contact(){
             required=""
             defaultValue={""}
           />
-          <button>SEND MESSAGE</button>
+          <button type="submit">SEND MESSAGE</button>
         </div>
       </div>
     </form>
